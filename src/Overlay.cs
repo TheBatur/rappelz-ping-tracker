@@ -36,7 +36,7 @@ namespace RappelzPing
             BackColor = Back;
             Opacity = 0.88;
             DoubleBuffered = true;
-            Text = "Rappelz Ping";
+            Text = "Rappelz Ping Tracker";
             try { Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch { }
 
             Size widest = Size.Empty;

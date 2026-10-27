@@ -4,19 +4,19 @@ using System.Threading;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-[assembly: AssemblyTitle("Rappelz Ping")]
-[assembly: AssemblyProduct("Rappelz Ping")]
+[assembly: AssemblyTitle("Rappelz Ping Tracker")]
+[assembly: AssemblyProduct("Rappelz Ping Tracker")]
 [assembly: AssemblyDescription("Live server ping overlay for Rappelz")]
 [assembly: AssemblyCopyright("MIT License")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
 
 namespace RappelzPing
 {
     static class Program
     {
-        public const string Version = "1.0.0";
-        public const string RepoUrl = "https://github.com/TheBatur/rappelz-ping";
+        public const string Version = "1.1.0";
+        public const string RepoUrl = "https://github.com/TheBatur/rappelz-ping-tracker";
 
         [STAThread]
         static void Main(string[] args)

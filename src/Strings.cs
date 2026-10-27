@@ -20,8 +20,8 @@ namespace RappelzPing
                                                               "Oyun açık ama bir sunucuya bağlı değil"); } }
         public static string TipMeasuring { get { return S("Connection found, waiting for the first sample",
                                                            "Bağlantı bulundu, ilk ölçüm bekleniyor"); } }
-        public static string TipNoAdmin { get { return S("Run Rappelz Ping as administrator",
-                                                         "Rappelz Ping'i yönetici olarak çalıştır"); } }
+        public static string TipNoAdmin { get { return S("Run Rappelz Ping Tracker as administrator",
+                                                         "Rappelz Ping Tracker'ı yönetici olarak çalıştır"); } }
         public static string TipServer { get { return S("Server ", "Sunucu "); } }
 
         public static string MenuReset { get { return S("Reset position", "Konumu sıfırla"); } }
@@ -29,18 +29,18 @@ namespace RappelzPing
         public static string MenuAbout { get { return S("About / source code", "Hakkında / kaynak kod"); } }
         public static string MenuClose { get { return S("Close", "Kapat"); } }
 
-        public static string ConsentTitle { get { return "Rappelz Ping"; } }
+        public static string ConsentTitle { get { return "Rappelz Ping Tracker"; } }
         public static string ConsentText
         {
             get
             {
                 return S(
-                    "Rappelz Ping sends anonymous usage counts so we can see how many people use it:\n" +
+                    "Rappelz Ping Tracker sends anonymous usage counts so we can see how many people use it:\n" +
                     "a random install ID, the app version, how long it runs and a ping summary " +
                     "(lowest / average / highest and the game server address).\n\n" +
                     "Your IP address, name, computer details and game account are never stored.\n" +
                     "You can turn this off at any time from the right-click menu.",
-                    "Rappelz Ping, kaç kişinin kullandığını görebilmemiz için anonim kullanım sayısı gönderir:\n" +
+                    "Rappelz Ping Tracker, kaç kişinin kullandığını görebilmemiz için anonim kullanım sayısı gönderir:\n" +
                     "rastgele bir kurulum kimliği, sürüm, ne kadar süre açık kaldığı ve ping özeti " +
                     "(en düşük / ortalama / en yüksek ve oyun sunucusunun adresi).\n\n" +
                     "IP adresin, adın, bilgisayar bilgilerin ve oyun hesabın asla saklanmaz.\n" +

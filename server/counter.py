@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Anonymous usage counter for Rappelz Ping.
+"""Anonymous usage counter for Rappelz Ping Tracker.
 
 Standard library only. Runs on 127.0.0.1 behind a reverse proxy (Caddy).
 
@@ -215,7 +215,7 @@ def record_event(data, ip):
 # ---------------------------------------------------------------- stats page
 TEXT = {
     "en": {
-        "title": "Rappelz Ping · usage", "users": "unique users (all time)", "now": "open right now",
+        "title": "Rappelz Ping Tracker · usage", "users": "unique users (all time)", "now": "open right now",
         "d1": "last 24 hours", "d7": "last 7 days", "d30": "last 30 days", "launches": "launches",
         "total": "total usage", "avg": "average session", "versions": "Versions (last 30 days, users)",
         "version": "Version", "user": "Users", "countries": "Countries (users)", "country": "Country",
@@ -224,7 +224,7 @@ TEXT = {
         "foot": "Users on a VPN show up in the VPN's country. IP addresses are not stored.",
     },
     "tr": {
-        "title": "Rappelz Ping · kullanım", "users": "farklı kullanıcı (toplam)", "now": "şu an açık",
+        "title": "Rappelz Ping Tracker · kullanım", "users": "farklı kullanıcı (toplam)", "now": "şu an açık",
         "d1": "son 24 saat", "d7": "son 7 gün", "d30": "son 30 gün", "launches": "açılış",
         "total": "toplam kullanım", "avg": "ortalama oturum", "versions": "Sürümler (son 30 gün, kullanıcı)",
         "version": "Sürüm", "user": "Kullanıcı", "countries": "Ülkeler (kullanıcı)", "country": "Ülke",

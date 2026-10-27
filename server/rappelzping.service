@@ -1,5 +1,5 @@
 [Unit]
-Description=Rappelz Ping anonymous usage counter
+Description=Rappelz Ping Tracker anonymous usage counter
 After=network-online.target
 Wants=network-online.target
 

@@ -84,7 +84,7 @@ namespace RappelzPing
                 var req = (HttpWebRequest)WebRequest.Create(Endpoint);
                 req.Method = "POST";
                 req.ContentType = "application/json";
-                req.UserAgent = "RappelzPing/" + Program.Version;
+                req.UserAgent = "RappelzPingTracker/" + Program.Version;
                 req.Timeout = timeoutMs;
                 req.ReadWriteTimeout = timeoutMs;
                 byte[] data = Encoding.UTF8.GetBytes(body);
