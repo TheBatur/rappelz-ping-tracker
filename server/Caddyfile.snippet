@@ -1,0 +1,18 @@
+# Rappelz Ping usage counter (server/counter.py, rappelzping.service, 127.0.0.1:3030).
+# No "log" directive on purpose: no access log, so client IPs are never written to disk.
+rappelzping.thebatur.com {
+	encode zstd gzip
+
+	reverse_proxy 127.0.0.1:3030 {
+		# Overwrite, never append: the counter reads the client IP from X-Real-IP
+		# (country lookup + rate limit, memory only).
+		header_up X-Real-IP {remote_host}
+		header_up X-Forwarded-For {remote_host}
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Robots-Tag "noindex"
+		-Server
+	}
+}

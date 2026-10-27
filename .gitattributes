@@ -1,0 +1,6 @@
+*.bat text eol=crlf
+*.cs text eol=crlf
+*.manifest text eol=crlf
+*.png binary
+*.ico binary
+server/** text eol=lf

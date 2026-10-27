@@ -1,0 +1,27 @@
+[Unit]
+Description=Rappelz Ping anonymous usage counter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 -I /srv/rappelzping/counter.py
+Environment=RP_DATA=/var/lib/rappelzping RP_PORT=3030
+DynamicUser=yes
+StateDirectory=rappelzping
+StateDirectoryMode=0700
+Restart=always
+RestartSec=5
+MemoryMax=400M
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target
